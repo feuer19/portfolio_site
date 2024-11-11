@@ -493,6 +493,7 @@ footer {
   display: none;
   position: absolute;
   right: 32px;
+  bottom: 40px;
   font-size: 24px;
   color: #000;
 }
@@ -547,9 +548,9 @@ footer {
 
 /* SMALL PHONES */
 @media screen and (max-width: 480px) {
-  .nav__link:not(:last-child) {
+  /* .nav__link:not(:last-child) {
     display: none;
-  }
+  } */
 
   .project__wrapper {
     border-radius: 0;
