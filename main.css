@@ -133,7 +133,7 @@ section:nth-child(even) {
 
 .header.fixed {
   background-color: #30a26e;
-
+  opacity: 0.8;
   box-shadow: 0 2px 8px hsla(0, 0%, 80%, 0.8);
 }
 
@@ -318,6 +318,7 @@ section:nth-child(even) {
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+  animation: fade-up 650ms 1400ms backwards;
 }
 
 .language__name {
@@ -385,6 +386,7 @@ section:nth-child(even) {
 
 .project__list {
   padding-top: 40px;
+  animation: fade-up 650ms 400ms backwards;
 }
 
 .project__description {

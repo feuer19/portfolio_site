@@ -5,13 +5,13 @@ const headerHeight = header.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
-  //navbar의 높이가 현재까지 스크롤 된 Y값보다 작다면 navbar에 fixed라는 클래스를 넣어라.
-  //1) 삼항연산자 사용
+  //navbar의 높이가 현재까지 스크롤 된 Y값보다 작다면 navbar에 fixed라는 클래스
+  //1) 삼항연산자 
   headerHeight < scrollY
     ? header.classList.add("fixed")
     : header.classList.remove("fixed");
 
-  //2) if문 사용
+  //2) if문 
   if (window.scrollY > headerHeight) {
     header.classList.add("fixed");
   } else {
